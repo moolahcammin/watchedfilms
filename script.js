@@ -5,4 +5,4 @@ console.log("Я посмотрел столько фильмов:" + numberOfFil
 
 let personalMovieDB = {
     count: numberOfFilms,
-}
+};
