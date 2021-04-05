@@ -1,8 +1,20 @@
-"use strict";
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-let numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "100");
-console.log("Я посмотрел столько фильмов:" + numberOfFilms);
-
-let personalMovieDB = {
-    count: numberOfFilms,
+const personalMovieDB = {
+    count:numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
+
+const a = prompt("Один из просмотренных фильмов?", ""),
+      b = prompt("Насколько оцените его?"),
+      c = prompt("Один из просмотренных фильмов?", ""),
+      d = prompt("Насколько оцените его?");
+
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
